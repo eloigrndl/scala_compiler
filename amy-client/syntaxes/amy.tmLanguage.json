@@ -1,0 +1,87 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "amyLSP",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#type"
+		},
+		{
+			"include": "#boolean"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "operators"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.amy",
+				"match": "\\b(if|else|while|for|return|match|case)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.amy",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.amy",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments":{
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block",
+					"match": "/\\*.*?\\*/"
+
+				}
+			]
+		},
+		"type":{
+			"patterns": [{
+				"name": "entity.name.type",
+				"match": "\\b(Int|Unit|List|Cons|Nil|Boolean)\\b"
+			}]
+		},
+		"storage":{
+			"patterns": [{
+				"name": "storage.type",
+				"match": "\\b(def|val|object)\\b"
+			}]
+		},
+		"boolean":{
+			"patterns": [{
+				"name": "constant.language",
+				"match": "\\b(true|false)\\b"
+			}]
+		},
+		"number":{
+			"patterns": [{
+				"name": "constant.numeric",
+                "match": "\\b(\\d+)\\b"			
+            }]
+		}
+	},
+	"scopeName": "source.amy"
+}

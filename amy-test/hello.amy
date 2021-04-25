@@ -1,0 +1,8 @@
+//Test for Amy auto-complition.
+//Our server has the following capabilities for auto-completion.
+//It can auto-complete the sayHello() funtion body or the match pattern.
+//Start typing s or m and get a first experience ^^.
+
+object Hello {
+  Std.printString("Hello " ++ "world!")
+}
