@@ -1,6 +1,6 @@
 # Amy Compiler
 
-Project during 3rd year @ EPFL (CS_320 Course : Computer Language Processing)
+Project during 3rd year @ EPFL (CS_320 Course : Computer Language Processing)<br />
 Eloi Garandel, Raoul Gerber, Szabina Horva ́th-Mikulas, Erik Wengle
 
 The main goal of this course was to implement a programming language based on Scala : the [Amy language](http://lara.epfl.ch/~gschmid/clp20/amy-spec.pdf).
