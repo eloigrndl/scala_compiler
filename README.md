@@ -1,10 +1,12 @@
 # Amy Compiler
 
-Project during 3rd year @ EPFL (CS_320 Course : Computer Language Processing)<br />
+Project during 3rd year @ EPFL ([CS_320 Course : Computer Language Processing](https://edu.epfl.ch/coursebook/en/computer-language-processing-CS-320))<br />
 Eloi Garandel, Raoul Gerber, Szabina Horváth-Mikulas, Erik Wengle
 
 The main goal of this course was to implement a programming language based on Scala : the [Amy language](http://lara.epfl.ch/~gschmid/clp20/amy-spec.pdf).
 The first step was to create a compiler for this language and then create an extension for the compiler. The compiler is in the amy-compiler-w-server folder and the extension is described below. 
+
+The report pdf file gives a brief explanantion of the overall project and the extension we made.
 
 
 ## Amy LSP Extension
